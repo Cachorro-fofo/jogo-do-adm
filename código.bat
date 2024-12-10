@@ -26,11 +26,10 @@ echo.
 echo mas conseguiu um btc.
 
 set /a COIN=%COIN%+1
-timeout /t 1 >nul
-pause
+timeout /t 3 >nul
 
 cls
-echo btc's = %COIN%
+echo btc = %COIN%
 pause
 
 goto loop
