@@ -8,7 +8,7 @@ set /a COIN=0
 set /a random_number=%random% %% 100
 
 echo tentando acalmar o ADM...
-timeout /t 1 >nul
+timeout /t 5 >nul
 cls
 
 if %random_number%==0 (
@@ -19,12 +19,17 @@ if %random_number%==0 (
 
 if "%ADM%"=="calmo" goto fim
 
-echo voce não conseguiu acalmar o ADM...
-timeout /t 1 >nul
+echo voce nao conseguiu acalmar o ADM...
+timeout /t 3 >nul
 
+echo.
 echo mas conseguiu um btc.
-set /a COIN=%COIN%+1
 
+set /a COIN=%COIN%+1
+timeout /t 1 >nul
+pause
+
+cls
 echo btc's = %COIN%
 pause
 
