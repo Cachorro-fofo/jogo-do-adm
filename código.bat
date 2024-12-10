@@ -1,4 +1,5 @@
 @echo off
+title JOGO DO ADM
 color a
 
 :loop
